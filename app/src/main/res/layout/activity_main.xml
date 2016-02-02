@@ -21,16 +21,50 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <!--
+        For using layouts from other layouts
+        <include layout="@layout/content_main" />
 
-<!--
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
--->
 
+        Creates Material design icon with option inside
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_dialog_email" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_linear_layout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/income_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/plus"
+            android:onClick="onAddIncome"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:id="@+id/transaction_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="450px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/minus"
+            android:layout_gravity="bottom" />
+            <!--android:onClick="onAddTransaction"-->
+
+
+
+    </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
+
+
