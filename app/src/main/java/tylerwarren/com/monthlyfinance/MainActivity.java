@@ -49,4 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(addIncomeIntent);
     }
+
+    public void onAddTransaction(View view) {
+        Intent addTransactionIntent = new Intent(this, SubtractActivity.class);
+
+        final  int result = 1;
+
+        startActivity(addTransactionIntent);
+    }
 }

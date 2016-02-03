@@ -7,8 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="tylerwarren.com.monthlyfinance.AddActivity">
-
+    tools:context="tylerwarren.com.monthlyfinance.SubtractActivity">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -17,6 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        style="@android:style/Theme.Material.Light"
         android:gravity="top|center">
 
         <TextView
@@ -33,6 +33,6 @@
             android:ems="10"
             android:hint="@string/edit_transaction_amount"
             android:id="@+id/editText" />
-
     </LinearLayout>
+
 </RelativeLayout>

@@ -5,18 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    style="@android:style/Theme.Material.Light"
     tools:context="tylerwarren.com.monthlyfinance.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@android:style/Theme.Material.Light">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
+            android:theme="@android:style/Theme.Material.Light"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
@@ -40,29 +42,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/main_linear_layout"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:theme="@android:style/Theme.Material.Light">
 
         <Button
             android:id="@+id/income_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50px"
-            android:layout_marginBottom="25px"
-            android:background="@drawable/plus"
-            android:onClick="onAddIncome"
-            android:layout_gravity="bottom" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/plus_25"
+            android:layout_gravity="bottom|center_horizontal"
+            android:onClick="onAddIncome"/>
 
         <Button
             android:id="@+id/transaction_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="450px"
-            android:layout_marginBottom="25px"
-            android:background="@drawable/minus"
-            android:layout_gravity="bottom" />
-            <!--android:onClick="onAddTransaction"-->
-
-
+            android:layout_marginLeft="125dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/minus_25"
+            android:layout_gravity="bottom|center_horizontal"
+            android:onClick="onAddTransaction"/>
 
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
