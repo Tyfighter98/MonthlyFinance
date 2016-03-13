@@ -50,11 +50,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(addIncomeIntent);
     }
 
-    public void onAddTransaction(View view) {
-        Intent addTransactionIntent = new Intent(this, SubtractActivity.class);
+    public void onAddExpense(View view) {
+        Intent addExpenseIntent = new Intent(this, SubtractActivity.class);
 
         final  int result = 1;
 
-        startActivity(addTransactionIntent);
+        startActivity(addExpenseIntent);
+    }
+
+    public void onOpenTransactions(View view) {
+        Intent openTransactionsIntent = new Intent(this, TransactionsActivity.class);
+
+        final  int result = 1;
+
+        startActivity(openTransactionsIntent);
     }
 }

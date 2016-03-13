@@ -56,14 +56,23 @@
             android:onClick="onAddIncome"/>
 
         <Button
-            android:id="@+id/transaction_button"
+            android:id="@+id/trasnactions_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="125dp"
+            android:text="Transactions"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="onOpenTransactions"/>
+
+        <Button
+            android:id="@+id/expenses_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/minus_25"
             android:layout_gravity="bottom|center_horizontal"
-            android:onClick="onAddTransaction"/>
+            android:onClick="onAddExpense"/>
 
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
